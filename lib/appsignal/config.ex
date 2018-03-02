@@ -241,6 +241,9 @@ defmodule Appsignal.Config do
         to_string(config[:files_world_accessible])
       )
     end
+    unless empty?(config[:revision]) do
+      System.put_env("APP_REVISION", to_string(config[:revision]))
+    end
   end
 
   @doc """
