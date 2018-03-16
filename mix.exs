@@ -112,7 +112,7 @@ defmodule Appsignal.Mixfile do
 
   defp deps do
     [
-      {:httpoison, "~> 0.11"},
+      {:httpoison, ">= 0.11.0"},
       {:poison, ">= 1.3.0"},
       {:decorator, "~> 1.2.3"},
       {:plug, ">= 1.1.0", optional: true},
